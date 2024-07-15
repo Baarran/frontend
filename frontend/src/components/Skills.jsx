@@ -8,18 +8,18 @@ const Skills = () => {
   const skillsTitle = language === "en" ? "Skills" : "Beceriler";
 
   return (
-    <section className="bg-white dark:bg-gray-800 py-10">
-      <h2 className="text-black dark:text-white text-3xl font-bold text-center mb-6">
+    <section className="container mx-auto  justify-between items-center">
+      <h2 className="text-black dark:text-white text-5xl font-bold mb-4 	">
         {skillsTitle}
       </h2>
       <div className="flex justify-center space-x-4">
         {skills.map((skill) => (
-          <div key={skill.name} className="flex flex-col items-center">
-            <p className="text-black dark:text-white">{skill.name}</p> Lorem
-            ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
-            incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
-            ut aliquid ex ea commodi consequatur.
+          <div key={skill.name} className=" flex-col items-center">
+            <p className="text-blue-700	 dark:text-white text-3xl font-normal mb-4">
+              {skill.name}
+            </p>{" "}
+            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+            tempor incidunt ut labore et dolore magna aliqua.
           </div>
         ))}
       </div>
