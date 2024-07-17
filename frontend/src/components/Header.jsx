@@ -5,7 +5,7 @@ const Header = ({ darkMode, setDarkMode }) => {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   return (
-    <header className="bg-white dark:bg-gray-900 p-5 h-screen	 flex justify-between items-center">
+    <header className="bg-white dark:bg-gray-900 p-5 flex justify-between items-center">
       <h1 className="text-black dark:text-white text-4xl font-bold">
         Zeynep Çınar
       </h1>
