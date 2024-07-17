@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { LanguageContext } from "../components/LanguageContext";
 
 const skills = [
-  { name: "Java Script" },
-  { name: "React.Js" },
-  { name: "Node.Js" },
+  { name: "JavaScript", description: "Lorem ipsum dolor sit amet..." },
+  { name: "React.js", description: "Lorem ipsum dolor sit amet..." },
+  { name: "Node.js", description: "Lorem ipsum dolor sit amet..." },
 ];
 
 const Skills = () => {
@@ -12,18 +12,17 @@ const Skills = () => {
   const skillsTitle = language === "en" ? "Skills" : "Beceriler";
 
   return (
-    <section className="container mx-auto  justify-between items-center border-b-2 border-b-indigo-700 		">
-      <h2 className="text-black dark:text-white text-5xl font-bold mb-4 	">
+    <section className="bg-white dark:bg-gray-800 py-10">
+      <h2 className="text-black dark:text-white text-3xl font-bold text-center mb-6">
         {skillsTitle}
       </h2>
-      <div className="flex justify-center space-x-4 mb-20">
-        {skills.map((skill) => (
-          <div key={skill.name} className=" flex-col items-center border-b-indigo-700">
-            <p className="text-blue-700	 dark:text-white text-3xl font-normal mb-4 ">
+      <div className="container mx-auto">
+        {skills.map((skill, index) => (
+          <div key={index} className="mb-4">
+            <h3 className="text-black dark:text-white text-xl font-semibold">
               {skill.name}
-            </p>{" "}
-            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-            tempor incidunt ut labore et dolore magna aliqua.
+            </h3>
+            <p className="text-black dark:text-white">{skill.description}</p>
           </div>
         ))}
       </div>

@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
 import { LanguageProvider } from "./components/LanguageContext";
+import MainPage from "./components/MainPage";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,11 +25,9 @@ const App = () => {
         }`}
       >
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        <MainPage />
         <Skills />
-        <hr className="border-t-2 border-gray-300 dark:border-gray-600 my-8" />
         <Profile />
-        <hr className="border-t-2 border-gray-300 dark:border-gray-600 my-8" />
-        <Projects />
         <Footer />
       </div>
     </LanguageProvider>
