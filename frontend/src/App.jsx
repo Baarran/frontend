@@ -26,7 +26,9 @@ const App = () => {
       >
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <Skills />
+        <hr className="border-t-2 border-gray-300 dark:border-gray-600 my-8" />
         <Profile />
+        <hr className="border-t-2 border-gray-300 dark:border-gray-600 my-8" />
         <Projects />
         <Footer />
       </div>
