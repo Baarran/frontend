@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../components/LanguageContext";
-import profileImage from "../assets/image.png"; // Make sure this path is correct
+import profileImage from "../assets/image.png";
 
 const MainPage = () => {
   const { language } = useContext(LanguageContext);
